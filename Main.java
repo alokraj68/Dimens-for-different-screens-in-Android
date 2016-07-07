@@ -92,11 +92,11 @@ public class Main {
             dimens = (double)((int)dimens);
             dimens = dimens/1000;
             root = dimens + "";
-
-            System.out.println(prefix + " " +  root + " " + suffix );
+// removed extra space to correctly generate dimensions...
+            System.out.println(prefix + " " +  root + "" + suffix );
 
         }
-
-        System.out.println(line);
+// disabled to remove reduntant entry of orginal dimensions and generated dimensions
+        //System.out.println(line);
     }
 }
